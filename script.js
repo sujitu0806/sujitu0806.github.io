@@ -2,7 +2,6 @@
 const navToggle = document.getElementById('nav-toggle');
 const navMenu = document.getElementById('nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
-const contactForm = document.getElementById('contact-form');
 const profileImg = document.getElementById('profile-img');
 
 // Mobile Navigation Toggle
@@ -54,36 +53,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Contact form handling
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(contactForm);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const subject = formData.get('subject');
-    const message = formData.get('message');
-    
-    // Basic validation
-    if (!name || !email || !subject || !message) {
-        showNotification('Please fill in all fields', 'error');
-        return;
-    }
-    
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        showNotification('Please enter a valid email address', 'error');
-        return;
-    }
-    
-    // Simulate form submission
-    showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
-    
-    // Reset form
-    contactForm.reset();
-});
+// Contact form handling (removed - simplified contact section)
 
 // Notification system
 function showNotification(message, type = 'info') {
