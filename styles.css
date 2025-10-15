@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', sans-serif !important;
+    font-family: 'Open Sans', sans-serif !important;
     line-height: 1.6 !important;
     color: #fff !important;
     background-color: #000 !important;
@@ -25,6 +25,16 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* Typography - Montserrat Bold for headings, Open Sans for body */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700 !important;
+}
+
+p, span, div, a, li, td, th, input, textarea, button {
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 /* Navigation */
@@ -55,6 +65,7 @@ body {
     color: #c41e3a !important;
     text-decoration: none !important;
     transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 .nav-logo a:hover {
@@ -73,6 +84,7 @@ body {
     transition: color 0.3s ease;
     position: relative;
     font-size: 1rem !important;
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 .nav-link:hover {
