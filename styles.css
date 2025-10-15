@@ -120,23 +120,24 @@ body {
 }
 
 .hero-container {
-    width: 100%;
+    width: 100% !important;
     margin: 0 auto !important;
-    padding: 0 20px;
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0 20px !important;
+    position: relative !important;
+    z-index: 2 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .hero-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4rem;
-    max-width: 1000px;
-    margin: 0 auto;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 4rem !important;
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
 }
 
 .hero-title {
@@ -155,8 +156,9 @@ body {
 }
 
 .hero-about {
-    max-width: 500px;
-    flex: 1;
+    max-width: 500px !important;
+    flex: 1 !important;
+    text-align: left !important;
 }
 
 .hero-about p {
@@ -164,13 +166,14 @@ body {
     color: #ccc !important;
     margin-bottom: 1.5rem !important;
     line-height: 1.7 !important;
+    text-align: left !important;
 }
 
 .hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 0 0 auto;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex: 0 0 auto !important;
 }
 
 .profile-image {
@@ -730,4 +733,42 @@ div, section, article, main, aside, header, footer {
 /* Ensure proper centering for grid items */
 .projects-grid, .courses-grid {
     justify-items: center !important;
+}
+
+/* FORCE HERO CENTERING - OVERRIDE EVERYTHING */
+.hero {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.hero-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: none !important;
+}
+
+.hero-content {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+.hero-text {
+    flex: 1 !important;
+    max-width: 500px !important;
+    text-align: left !important;
+    margin-right: 2rem !important;
+}
+
+.hero-image {
+    flex: 0 0 auto !important;
+    margin-left: 2rem !important;
 }
