@@ -120,18 +120,23 @@ body {
 }
 
 .hero-container {
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto !important;
     padding: 0 20px;
     position: relative;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 4rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -150,7 +155,8 @@ body {
 }
 
 .hero-about {
-    max-width: 600px;
+    max-width: 500px;
+    flex: 1;
 }
 
 .hero-about p {
@@ -164,6 +170,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 0 0 auto;
 }
 
 .profile-image {
@@ -598,9 +605,10 @@ section {
     }
 
     .hero-content {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         text-align: center;
         gap: 2rem;
+        max-width: 100%;
     }
 
     .hero-title {
