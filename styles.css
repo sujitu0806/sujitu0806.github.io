@@ -18,6 +18,7 @@ body {
     overflow-x: hidden !important;
     margin: 0 !important;
     padding: 0 !important;
+    text-align: center !important;
 }
 
 .container {
@@ -39,12 +40,13 @@ body {
 
 .nav-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto !important;
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    text-align: left !important;
 }
 
 .nav-logo a {
@@ -119,7 +121,7 @@ body {
 
 .hero-container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto !important;
     padding: 0 20px;
     position: relative;
     z-index: 2;
@@ -254,19 +256,21 @@ section {
 
 .experience-timeline {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto !important;
 }
 
 .experience-item {
     display: flex;
     gap: 2rem;
-    margin-bottom: 3rem;
+    margin: 0 auto 3rem auto !important;
     padding: 2rem;
     background: #222 !important;
     border-radius: 8px;
     border-left: 4px solid #c41e3a;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 800px;
 }
 
 .experience-item:hover {
@@ -320,6 +324,7 @@ section {
     overflow: hidden;
     border: 2px solid #333 !important;
     transition: all 0.3s ease;
+    margin: 0 auto !important;
 }
 
 .project-card:hover {
@@ -414,6 +419,7 @@ section {
     border-radius: 8px;
     border: 2px solid #333 !important;
     transition: all 0.3s ease;
+    margin: 0 auto !important;
 }
 
 .course-item:hover {
@@ -470,7 +476,7 @@ section {
     gap: 3rem;
     flex-wrap: wrap;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto !important;
 }
 
 .contact-link {
@@ -512,6 +518,8 @@ section {
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto !important;
 }
 
 .footer-links {
@@ -694,4 +702,24 @@ div, section, article, main, aside, header, footer {
 
 .courses {
     background-color: #111 !important;
+}
+
+/* Ensure all content is centered */
+.container {
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+/* Override text alignment for specific elements that should be left-aligned */
+.nav-container, .nav-logo, .nav-menu, .nav-link {
+    text-align: left !important;
+}
+
+.experience-content, .project-content, .course-item {
+    text-align: left !important;
+}
+
+/* Ensure proper centering for grid items */
+.projects-grid, .courses-grid {
+    justify-items: center !important;
 }
